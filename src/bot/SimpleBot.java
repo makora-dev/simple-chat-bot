@@ -50,9 +50,10 @@ public class SimpleBot {
         System.out.println("2. To decompose a program into several small subroutines.");
         System.out.println("3. To determine the execution time of a program.");
         System.out.println("4. To interrupt the execution of a program.");
-        for (int rightAnswer = scanner.nextInt(); rightAnswer != 4; rightAnswer++) {
+        for (int i = 0; i != 1 ;) {
+            int rightAnswer = scanner.nextInt();
             if (rightAnswer == 4) {
-                end();
+                i = 1;
             } else {
                 System.out.println("Please, try again.");
             }
